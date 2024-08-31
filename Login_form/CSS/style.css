@@ -1,0 +1,167 @@
+/* aplica estilo para o geral da pag */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* inclui bordas e preenchimento no cálculo da largura e altura  */
+}
+
+html, body {
+    display: grid; /* permite centralizar facilmente o conteúdo. */
+    height: 100vh;
+    place-items: center;
+    background: #c6c646;
+    font-family: "Poppins", sans-serif;
+}
+/* Aplica estilos a caixa principal do formulário */
+.main_div {
+    width: 450px;
+    background: white;
+    padding: 30px; /* preenchimento interno de 30 pixels em todos os lados */
+    border-radius: 5px; /* Arredonda os cantos */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.15);/* adiciona sombra  */
+}
+/* Estilos para o título dentro da caixa principal */
+.main_div .title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;  /* Define o peso da fonte como seminegrito. */
+}
+
+.main_div .social_icons {
+    margin-top: 20px;
+    display: flex;  /* layout flexível para alinhar os ícones horizontalmente */
+    justify-content: center;
+}
+
+.social_icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adiciona alinhamento horizontal */
+    height: 45px;
+    width: 130px; /* Define uma largura fixa para as caixas */
+    border-radius: 5px;
+    font-size: 20px;
+    color: white; 
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.social_icons i {
+    margin-right: 5px; /* Espaçamento entre ícone e texto */
+}
+
+.social_icons span {
+    font-size: 18px;
+}
+
+.social_icons a:first-child {
+    margin-right: 5px;
+    background: rgb(73, 122, 247);
+}
+
+.social_icons a:first-child:hover {
+    background: #375695;
+}
+
+.social_icons a:last-child {
+    margin-left: 5px;
+    background: #d43aba;
+}
+
+.social_icons a:last-child:hover {
+    background: #780665;
+}
+
+form {
+    margin-top: 25px;
+}
+
+form .input_box {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+}
+
+.input_box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 45px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    transition: all 0.3s ease;
+}
+
+.input_box input:focus {
+    border-color: #c6c646;
+}
+
+.input_box .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: grey;
+    transform: translateY(-50%);
+}
+
+form .option_div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option_div .check_box {
+    display: flex;
+    align-items: center;
+}
+
+.option_div .check_box input {
+    transform: scale(0.8);
+    margin-right: 5px;
+}
+
+.option_div label {
+    font-size: 16px;
+    color: #333;
+}
+
+.option_div .forget_div {
+    font-size: 16px;
+    color: #c6c646;
+}
+
+.button input {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    background: #c6c646;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.button input:hover {
+    background: #806d01;
+}
+
+form .sign_up {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.sign_up a {
+    color: #c6c646;  
+}
+
+form a {
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
